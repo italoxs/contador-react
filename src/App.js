@@ -4,21 +4,18 @@ import './App.css'
 
 export default function App() {
   const [number, setNumber] = useState(0)
-  const [numberTwo, setNumberTwo] = useState(0)
 
-  function increase(contador) {
+  function increase() {
     setNumber(number + 1)
-    setNumberTwo(number + 1)
   }
 
   function decrease() {
     setNumber(number - 1)
-    setNumberTwo(number - 1)
   }
 
   return (
     <>
-    <section id="contadorOne">
+    <section className="contadorOne">
       <h1>Contador 1</h1>
       <p>{number}</p>
       <div>
