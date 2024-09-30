@@ -6,6 +6,7 @@ export default function App() {
   const [number, setNumber] = useState(0)
 
   function increase() {
+
     setNumber(number + 1)
   }
 
@@ -15,14 +16,14 @@ export default function App() {
 
   return (
     <>
-    <section className="contadorOne">
-      <h1>Contador 1</h1>
-      <p>{number}</p>
-      <div>
-        <button type="button" onClick={decrease}>-</button>
-        <button type="button" onClick={increase}>+</button>
-      </div>
+    <section>
+    <h1>Contador 1</h1>
+    <p>{number}</p>
+    <div>
+      <button className="btnDecrease" type="button" onClick={decrease}>-</button>
+      <button className="btnIncrease" type="button" onClick={increase}>+</button>
+    </div>
     </section>
-</>
+    </>
   );
 }
