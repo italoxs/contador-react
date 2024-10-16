@@ -24,7 +24,6 @@ div {
 }
 
 button {
-  background: #14b8a6;
   color: aliceblue;
   font-size: 24px;
   font-weight: bold;
@@ -36,6 +35,18 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btnIncrease {
+  background: #14b8a6;
+}
+
+.btnIncrease:hover {
   background: #0f766e;
+}
+
+.btnDecrease {
+  background: #ef4444;
+}
+
+.btnDecrease:hover {
+  background: #b91c1c;
 }
